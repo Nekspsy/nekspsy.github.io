@@ -16,10 +16,35 @@ $(function() {
 	});
 	$(".next").click(function() {
 		owl.trigger('next.owl.carousel');
-	})
+	});
 	$(".prev").click(function() {
 		owl.trigger('prev.owl.carousel');
-	})
+	});
+
+	$(".sf-menu").after("<div id='my-menu'>");
+	$(".sf-menu").clone().appendTo("#my-menu");
+	$("#my-menu").find("*").attr("style", "");
+	$("#my-menu").find("ul").removeClass("sf-menu");
+	$("#my-menu").mmenu({
+		extensions : [ 'theme-white', 'effect-menu-slide', 'pagedim-black'/*, 'widescreen'*/ ],
+		navbar: {
+			title: "Меню"
+		}
+	});
+
+	var api = $("#my-menu").data("mmenu");
+	api.bind("closed", function() {
+		$(".toggle-mnu".removeClass("on"));
+	});
+
+	$(".mobile-mnu").click(function() {
+		var mmAPI = $("#my-menu").data( "mmenu" );
+		mmAPI.open();
+		var thiss = $(this).find(".toggle-mnu");
+		thiss.toggleClass("on");
+		$(".main-mnu").slideToggle();
+		return false;
+	});
 
 	//SVG Fallback
 	if(!Modernizr.svg) {
