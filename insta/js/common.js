@@ -1,6 +1,8 @@
 $(function() {
 
 	$(".service-item h4").equalHeights();
+	$(".new-item-text").equalHeights();
+	$(".link-item").equalHeights();
 
 	$(".top-line .sf-menu").superfish({
 		cssArrows: false,
