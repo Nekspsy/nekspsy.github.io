@@ -10,6 +10,10 @@ h3{
 	position: absolute;
 }
 
+a{
+ color: #ffffff;
+}
+
 .section {
   height: 100vh;
   background-color: #7b1fa2;
