@@ -1,12 +1,12 @@
 {
-  "name": "optimizedhtml",
+  "name": "SMitler",
   "version": "4.0.0",
-  "description": "OptimizedHTML 4 - Start HTML Template",
+  "description": "Portfolio project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "WebDesign Master",
+  "author": "NeksPsy",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.3",
