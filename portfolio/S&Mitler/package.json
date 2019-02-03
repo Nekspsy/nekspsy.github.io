@@ -22,6 +22,7 @@
     "gulp-util": "^3.0.8"
   },
   "dependencies": {
-    "fotorama": "^4.6.4"
+    "fotorama": "^4.6.4",
+    "jquery.mmenu": "^7.2.3"
   }
 }
